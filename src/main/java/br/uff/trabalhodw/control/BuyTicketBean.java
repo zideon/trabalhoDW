@@ -5,15 +5,10 @@
  */
 package br.uff.trabalhodw.control;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
-
 /**
  *
  * @author fabio
  */
-@ManagedBean
-@SessionScoped
-public class MenuBean {
+public class BuyTicketBean {
     
 }

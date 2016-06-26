@@ -3,17 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.uff.trabalhodw.control;
+package br.uff.trabalhodw.persistence;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import br.uff.trabalhodw.model.Ticket;
 
 /**
  *
  * @author fabio
  */
-@ManagedBean
-@SessionScoped
-public class MenuBean {
+public class TicketDAO  extends AbstractJpaDao<Ticket,Long> {
+
+    public TicketDAO() {
+        super(Ticket.class);
+    }
     
 }

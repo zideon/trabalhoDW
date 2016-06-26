@@ -15,7 +15,6 @@
         <mojarra.version>2.2.8-02</mojarra.version>
         <mysql.version>5.1.18</mysql.version>
         <primefaces.version>5.0</primefaces.version>
-
     </properties>
     
     <repositories>
@@ -27,6 +26,25 @@
         </repository>
     </repositories>
     <dependencies>
+        <!--repository-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.2.4.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.1.0.Final</version>
+        </dependency>
+
+
+        <!--end hibernate-->
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
@@ -39,7 +57,8 @@
             <artifactId>jsf-api</artifactId>
             <version>${mojarra.version}</version>
             <type>jar</type>
-        </dependency>       
+        </dependency>
+       
         <dependency>
             <groupId>com.sun.faces</groupId>
             <artifactId>jsf-impl</artifactId>
@@ -47,7 +66,7 @@
             <scope>compile</scope>
             <type>jar</type>
         </dependency>
-        <!--fim JSF-->
+        <!--end JSF-->
         <!-- MySQL -->
         <dependency>
             <groupId>mysql</groupId>
@@ -56,14 +75,14 @@
             <!--                    <type>jar</type>
             <scope>compile</scope>-->
         </dependency>
-        <!-- MySQL -->
+        <!-- end MySQL -->
         <!-- PrimeFaces -->
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
             <version>${primefaces.version}</version>
         </dependency>
-        <!-- PrimeFaces -->
+        <!-- end PrimeFaces -->
     </dependencies>
 
     <build>
